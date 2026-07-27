@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://fhir.developer.gene.com/ImplementationGuide/gene.com.fhir.uapi
+versioning:
+  scheme: implementation-guide-version
+  current: '1.1.19'
+  status: draft
+  released: '2024-02-19'
+  fhir_version: '4.3.0'
+  docs: https://fhir.developer.gene.com/
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No published deprecation policy or RFC 8594 Sunset/Deprecation header support observed.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  Lifecycle is expressed through versioned releases of the Universal API
+  Implementation Guide. No separate public status page, SLA, or deprecation
+  policy was located; therefore no StatusPage or Deprecation pointers are
+  emitted (absence recorded as valid data).

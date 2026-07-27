@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.gene.com/.well-known/ and https://www.gene.com/.well-known/
+hosts:
+- host: https://developer.gene.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: genentech-openid-configuration.json
+    note: OpenID Connect discovery (Salesforce Experience Cloud identity provider)
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+  - path: /.well-known/security.txt
+    status: 401
+  - path: /.well-known/api-catalog
+    status: 401
+  - path: /.well-known/ai-plugin.json
+    status: 401
+- host: https://www.gene.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: genentech-security.txt
+    note: RFC 9116 security contact; points to Roche HackerOne + OpenBugBounty
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://fhir.developer.gene.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/security.txt
+    status: 403

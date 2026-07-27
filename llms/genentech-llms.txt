@@ -1,0 +1,38 @@
+# Genentech
+
+> Genentech is a biotechnology company (founded 1976, South San Francisco; part of the Roche Group since 2009) that discovers, develops, and commercializes medicines. For developers it operates a public Developer Portal and Integration Marketplace exposing FHIR R4 "Universal API" (UAPI) services for Patient Support Services, plus a large open-source GitHub organization for computational biology and AI.
+
+## APIs
+
+- [Genentech Universal API (UAPI)](https://fhir.developer.gene.com/): FHIR R4 (v4.3.0) API for Patient Support Services — Access Solutions patient enrollment, Copay enrollment, Patient Foundation enrollment, and enrollment status queries. Registration-based via the Integration Marketplace with API keys + OAuth2/OIDC.
+
+## Docs
+
+- [Developer Portal](https://developer.gene.com/s/): Genentech developer home / Integration Marketplace.
+- [API Library](https://developer.gene.com/s/api-library): API catalog and documentation.
+- [Universal API Implementation Guide](https://fhir.developer.gene.com/): FHIR R4 implementation guide (v1.1.19).
+- [Getting Started](https://developer.gene.com/s/how-will-this-help-me-or-my-customers): Business quick-start.
+- [Help](https://developer.gene.com/s/help): Support.
+- [Terms of Use](https://developer.gene.com/s/terms-of-use): Integration Marketplace terms.
+
+## Auth
+
+- [OpenID Connect discovery](https://developer.gene.com/.well-known/openid-configuration): OAuth2/OIDC authorization surface (Salesforce Experience Cloud identity provider).
+- Authentication profile: authentication/genentech-authentication.yml
+- OAuth scopes: scopes/genentech-scopes.yml
+
+## Security
+
+- [security.txt](https://www.gene.com/.well-known/security.txt): RFC 9116 — reports to security@roche.com; Roche HackerOne bug bounty; OpenBugBounty.
+- Vulnerability disclosure: security/genentech-vulnerability-disclosure.yml
+
+## Specs
+
+- Conformance: conformance/genentech-conformance.yml (FHIR R4, OAuth2, OIDC)
+- Conventions: conventions/genentech-conventions.yml
+- Lifecycle: lifecycle/genentech-lifecycle.yml
+- Well-known index: well-known/genentech-well-known.yml
+
+## Open Source
+
+- [GitHub organization](https://github.com/Genentech): 150+ repositories — computational biology, genomics, and AI/ML for drug discovery (gReLU, scimilarity, SpatialAgent, BRAID).

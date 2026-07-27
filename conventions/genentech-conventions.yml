@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://fhir.developer.gene.com/
+scope: Genentech Universal API (UAPI) — FHIR R4 Patient Support Services
+authentication:
+  style: OAuth2 / OpenID Connect + per-organization API keys
+  detail: see authentication/genentech-authentication.yml
+data_format:
+  standard: HL7 FHIR R4 (v4.3.0)
+  media_type: application/fhir+json
+  transaction_model: >-
+    RESTful FHIR interactions; enrollment submissions use FHIR Bundles via
+    POST/PATCH per the Universal API Implementation Guide.
+pagination:
+  style: fhir-bundle
+  detail: >-
+    FHIR searchset Bundles paginate via Bundle.link relations (self / next /
+    previous) per the FHIR R4 specification.
+versioning:
+  scheme: implementation-guide-version
+  current: '1.1.19'
+  fhir_version: '4.3.0'
+  detail: see lifecycle/genentech-lifecycle.yml
+error_envelope:
+  shape: fhir-operationoutcome
+  detail: >-
+    Errors are returned as FHIR OperationOutcome resources (issue.severity,
+    issue.code, issue.diagnostics) rather than RFC 9457 problem+json.
+idempotency:
+  supported: unknown
+  detail: >-
+    FHIR R4 supports conditional create (If-None-Exist) and conditional update,
+    but Genentech's UAPI documentation does not explicitly publish an
+    idempotency contract; no Idempotency pointer emitted.
+cross_links:
+  authentication: authentication/genentech-authentication.yml
+  scopes: scopes/genentech-scopes.yml
+  conformance: conformance/genentech-conformance.yml
+  lifecycle: lifecycle/genentech-lifecycle.yml

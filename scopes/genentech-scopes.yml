@@ -1,0 +1,91 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.gene.com/.well-known/openid-configuration
+docs: https://developer.gene.com/s/api-library
+notes: >-
+  Scopes are taken verbatim from the `scopes_supported` array advertised by the
+  Genentech Developer Portal OpenID Connect discovery document. The portal runs
+  on Salesforce Experience Cloud, so these are the platform's standard OAuth2
+  scopes exposed by the identity provider, not per-resource FHIR UAPI business
+  scopes (the UAPI itself is gated by registration + per-organization API keys
+  through the Integration Marketplace). Captured for auth-clarity signal.
+schemes:
+- name: oauth2
+  source: well-known/genentech-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://developer.gene.com/services/oauth2/authorize
+    tokenUrl: https://developer.gene.com/services/oauth2/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication.
+- scope: profile
+  description: Access to the user's basic profile claims.
+- scope: email
+  description: Access to the user's email address.
+- scope: address
+  description: Access to the user's address claim.
+- scope: phone
+  description: Access to the user's phone number claim.
+- scope: api
+  description: Access to platform REST/SOAP API resources.
+- scope: web
+  description: Web access to the org on behalf of the user.
+- scope: full
+  description: Full access to all resources the user can access.
+- scope: id
+  description: Access to the identity URL service.
+- scope: refresh_token
+  description: Issue a refresh token for long-lived access.
+- scope: offline_access
+  description: Maintain access when the user is offline.
+- scope: lightning
+  description: Access to Lightning Experience resources.
+- scope: visualforce
+  description: Access to Visualforce pages.
+- scope: content
+  description: Access to content/file resources.
+- scope: chatter_api
+  description: Access to Chatter REST API resources.
+- scope: user_registration_api
+  description: Self-registration handler API.
+- scope: pwdless_login_api
+  description: Passwordless login API.
+- scope: forgot_password
+  description: Forgot-password flow.
+- scope: custom_permissions
+  description: Access to the user's custom permissions.
+- scope: interaction_api
+  description: Interaction Studio / interaction API.
+- scope: cdp_api
+  description: Data Cloud (CDP) API.
+- scope: cdp_ingest_api
+  description: Data Cloud ingestion API.
+- scope: cdp_query_api
+  description: Data Cloud query API.
+- scope: cdp_profile_api
+  description: Data Cloud profile API.
+- scope: cdp_segment_api
+  description: Data Cloud segmentation API.
+- scope: cdp_identityresolution_api
+  description: Data Cloud identity resolution API.
+- scope: cdp_calculated_insight_api
+  description: Data Cloud calculated insights API.
+- scope: data_cloud_user_claims
+  description: Data Cloud user claims.
+- scope: einstein_gpt_api
+  description: Einstein GPT / generative AI API.
+- scope: sfap_api
+  description: Salesforce AI platform API.
+- scope: mcp_api
+  description: Model Context Protocol API scope.
+- scope: chatbot_api
+  description: Einstein Bots / chatbot API.
+- scope: wave_api
+  description: CRM Analytics (Wave) API.
+- scope: eclair_api
+  description: CRM Analytics Eclair charting API.
+- scope: pardot_api
+  description: Account Engagement (Pardot) API.
+- scope: scrt_api
+  description: Service Cloud real-time (SCRT) API.

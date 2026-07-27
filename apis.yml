@@ -1,22 +1,114 @@
 aid: genentech
 name: Genentech
-description: Genentech is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Genentech is a biotechnology company founded in 1976 and headquartered in
+  South San Francisco, California, and a member of the Roche Group since 2009.
+  It discovers, develops, manufactures, and commercializes medicines across
+  oncology, immunology, ophthalmology, neuroscience, infectious disease, and
+  rare disease. For developers and health-system integration partners,
+  Genentech operates a public Developer Portal (developer.gene.com) and an
+  Integration Marketplace that exposes FHIR R4 "Universal API" (UAPI) services
+  for Patient Support Services — including Access Solutions patient enrollment,
+  Copay program enrollment, Patient Foundation enrollment, and status query
+  services. Access is registration-based with API keys and an OAuth2 / OpenID
+  Connect authorization surface. Genentech also maintains a large open-source
+  GitHub organization (github.com/Genentech, 150+ repositories) focused on
+  computational biology, genomics, and AI/ML for drug discovery.
 url: https://raw.githubusercontent.com/api-evangelist/genentech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - mayfield
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: has-public-developer-portal-and-fhir-api
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.gene.com/favicon.ico
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Biotechnology
+- Pharmaceuticals
+- Healthcare
+- Life Sciences
+- FHIR
+- Patient Support Services
+- Drug Discovery
+- Genomics
+apis:
+- name: Genentech Universal API (UAPI)
+  description: >-
+    FHIR R4 (v4.3.0) Universal API for Genentech Patient Support Services,
+    documented in the Universal API Implementation Guide. Supports Access
+    Solutions patient enrollment, Copay enrollment, Patient Foundation
+    enrollment, and enrollment status query services. Connectivity is
+    registration-based through the Genentech Integration Marketplace with
+    API keys and an OAuth2/OIDC authorization surface.
+  humanURL: https://fhir.developer.gene.com/
+  baseURL: https://developer.gene.com/
+  properties:
+  - type: APIReference
+    url: https://fhir.developer.gene.com/
+  - type: Documentation
+    url: https://developer.gene.com/s/api-library
+common:
+- type: Website
+  url: https://www.gene.com/
+- type: DeveloperPortal
+  url: https://developer.gene.com/s/
+- type: Documentation
+  url: https://developer.gene.com/s/api-library
+- type: APIReference
+  url: https://fhir.developer.gene.com/
+- type: GettingStarted
+  url: https://developer.gene.com/s/how-will-this-help-me-or-my-customers
+- type: Support
+  url: https://developer.gene.com/s/help
+- type: TermsOfService
+  url: https://developer.gene.com/s/terms-of-use
+- type: GitHubOrganization
+  url: https://github.com/Genentech
+- type: WellKnown
+  url: well-known/genentech-well-known.yml
+- type: SecurityTxt
+  url: well-known/genentech-security.txt
+- type: Authentication
+  url: authentication/genentech-authentication.yml
+- type: OAuthScopes
+  url: scopes/genentech-scopes.yml
+- type: Conformance
+  url: conformance/genentech-conformance.yml
+- type: Conventions
+  url: conventions/genentech-conventions.yml
+- type: Lifecycle
+  url: lifecycle/genentech-lifecycle.yml
+- type: VulnerabilityDisclosure
+  url: security/genentech-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.gene.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/genentech-domain-security.yml
+- type: LLMsTxt
+  url: llms/genentech-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

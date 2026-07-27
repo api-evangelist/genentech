@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://fhir.developer.gene.com/ and https://developer.gene.com/.well-known/openid-configuration
+standards:
+- id: fhir-r4
+  conforms: true
+  evidence: >-
+    Universal API Implementation Guide (v1.1.19) declares FHIR R4 (v4.3.0) with
+    customized profiles for Patient, Organization, Practitioner, Coverage, and
+    Questionnaire resources; RESTful interactions using FHIR Bundles.
+- id: oauth2
+  conforms: true
+  evidence: >-
+    OpenID Connect discovery advertises authorization/token/revocation/
+    introspection endpoints with authorizationCode flow.
+- id: oidc
+  conforms: true
+  evidence: >-
+    /.well-known/openid-configuration present with issuer, jwks_uri, userinfo
+    endpoint, RS256 id_token signing, and standard OIDC claims.
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: https://www.gene.com/.well-known/security.txt (RFC 9116)
+- id: smart-on-fhir
+  conforms: false
+  evidence: >-
+    No SMART on FHIR .well-known/smart-configuration observed; access is
+    registration-based via the Integration Marketplace with API keys.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: >-
+    FHIR uses OperationOutcome for errors rather than application/problem+json;
+    no RFC 9457 usage observed.
