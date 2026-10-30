@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Genentech is a company surfaced as a portfolio company of mayfield and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Genentech is a biotechnology company founded in 1976 and headquartered in South San Francisco, California, and a member of the Roche Group since 2009. It discovers, develops, manufactures, and commercializes medicines across oncology, immunology, ophthalmology, neuroscience, infectious disease, and rare disease. For developers and health-system integration partners, Genentech operates a public Developer Portal (developer.gene.com) and an Integration Marketplace that exposes FHIR R4 "Universal API" (UAPI) services for Patient Support Services — including Access Solutions patient enrollment, Copay program enrollment, Patient Foundation enrollment, and status query services. Access is registration-based with API keys and an OAuth2 / OpenID Connect authorization surface. Genentech also maintains a large open-source GitHub organization (github.com/Genentech, 150+ repositories) focused on computational biology, genomics, and AI/ML for drug discovery.
 
-Backed by: mayfield
+**Areas:** Company · Biotechnology · Pharmaceuticals · Healthcare · Life Sciences · FHIR · Patient Support Services · Drug Discovery · Genomics
+
+## Genentech on APIs.io
+
+Everything profiled for Genentech is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/genentech/](https://apis.io/providers/genentech/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Genentech Universal API (UAPI)](https://apis.io/apis/genentech/genentech-universal-api-uapi/) — FHIR R4 (v4.3.0) Universal API for Genentech Patient Support Services, documented in the Universal API Implementation Guide. Supports Access Solutions…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Genentech Authentication](https://apis.io/security/genentech/genentech-authentication/)
+- [Genentech Domain Security](https://apis.io/security/genentech/genentech-domain-security/)
+- [Genentech Vulnerability Disclosure](https://apis.io/security/genentech/genentech-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Genentech Scopes](https://apis.io/scopes/genentech/genentech-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.gene.com/)
+- [Documentation](https://developer.gene.com/s/api-library)
+- [Getting started](https://developer.gene.com/s/how-will-this-help-me-or-my-customers)
+- [API reference](https://fhir.developer.gene.com/)
+- [Support](https://developer.gene.com/s/help)
+- [Security](https://www.gene.com/.well-known/security.txt)
+- [Terms of service](https://developer.gene.com/s/terms-of-use)
+- [GitHub](https://github.com/Genentech)
+
+## API Evangelist rating
+
+**Kin Score 23.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 36.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 37.5** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/genentech/](https://apis.io/providers/genentech/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Genentech: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/genentech/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
